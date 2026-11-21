@@ -79,7 +79,8 @@
     },
     {
       "title": "When Not to Make Progress: Test-Time Exploration for LLM Agents",
-      "authors": "Xinhe Wang*, Yao Fu*, Ran Qiu, Honglak Lee"
+      "authors": "Xinhe Wang*, Yao Fu*, Ran Qiu, Honglak Lee",
+      "id": "test-time-exploration"
     }
   ]
 }

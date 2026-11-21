@@ -1,34 +1,54 @@
 ---
 layout: about
-title: about
+title: Home
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
+selected_papers: false
+social: false
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
+  enabled: false
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<link rel="stylesheet" href="{{ '/assets/css/academic-profile.css' | relative_url }}">
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+<div class="profile-intro">
+  <p>Hi, I am Xinhe Wang, currently a second-year master's student at Carnegie Mellon University, supervised by Prof. <a href="https://www.ri.cmu.edu/ri-faculty/katia-sycara/">Katia Sycara</a>. I enjoy building trustworthy(<a href="#data-attribution">Data Attribution</a>, <a href="#perception-bottlenecks">Perception Bottlenecks</a>, <a href="#intention-deception">Intention Deception</a>, <a href="#intention-verification">Intention Verification</a>) agents that can adapt(<a href="#code-augmented-planning">Code-Augmented Planning</a>, <a href="#imperfect-guidance">Beyond Blind Following</a>), evolve(<a href="#continual-policy-programming">Continual Policy Programming</a>) and safely collaborate(<a href="#cooperative-words">Action Ambiguity</a>) to accomplish real-world complex tasks. I have worked with Prof <a href="https://yaqi-xie.me/">Yaqi Xie</a>, Prof. <a href="https://web.eecs.umich.edu/~honglak/index.html">Honglak Lee</a>, Prof. <a href="https://jiaqima.github.io/">Jiaqi Ma</a>, and Prof. <a href="https://tiiao.github.io/">Tianhao Wang</a>.</p>
+</div>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+<section class="academic-section" aria-labelledby="publications">
+  <h2 id="publications">Selected Publications</h2>
+  <ul class="publication-list">
+    {% for paper in site.data.academic.publications %}
+      <li>
+        <span class="publication-venue">
+          {{ paper.venue_label | escape }}
+          {% if paper.venue_type %}<span class="publication-venue-type">{{ paper.venue_type | escape }}</span>{% endif %}
+        </span>
+        <div class="publication-details">
+          <h3 id="{{ paper.id | escape }}">{{ paper.title | escape }}</h3>
+          <p class="publication-authors">{{ paper.authors | escape | replace: 'Xinhe Wang', '<strong>Xinhe Wang</strong>' }}</p>
+          <p class="publication-meta publication-venue-detail">{{ paper.venue | escape }}</p>
+          {% if paper.paper_url %}
+            <a class="publication-html" href="{{ paper.paper_url | escape }}" aria-label="HTML: {{ paper.title | escape }}">HTML</a>
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h3 class="preprints-heading">Preprints</h3>
+  <ul class="publication-list preprint-list">
+    {% for paper in site.data.academic.preprints %}
+      <li class="publication-details">
+        <h4{% if paper.id %} id="{{ paper.id | escape }}"{% endif %}>{{ paper.title | escape }}</h4>
+        <p class="publication-authors">{{ paper.authors | escape | replace: 'Xinhe Wang', '<strong>Xinhe Wang</strong>' }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="academic-section" aria-labelledby="misc">
+  <h2 id="misc">Misc</h2>
+  <p>My career goal is to build an agent similar to <a href="https://steins-gate.fandom.com/wiki/Amadeus_System">Amadeus</a>.</p>
+</section>

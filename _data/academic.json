@@ -1,0 +1,85 @@
+{
+  "education": [
+    {
+      "school": "Carnegie Mellon University",
+      "degree": "Master of Science in Robotics (MSR)",
+      "dates": "Sep 2025 – Aug 2027"
+    },
+    {
+      "school": "University of Michigan, Ann Arbor",
+      "degree": "B.S.E. in Computer Science",
+      "dates": "Sep 2023 – May 2025"
+    },
+    {
+      "school": "Shanghai Jiao Tong University",
+      "degree": "B.S.E. in Electrical and Computer Engineering",
+      "dates": "Sep 2021 – Aug 2025"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Continual Policy Programming for LLM Agents: Learning Executable Policies from Online Experience",
+      "authors": "Xinhe Wang, Ran Qiu",
+      "venue": "NeurIPS 2026 Workshop: Towards Test-Time Continual Learning",
+      "venue_label": "NeurIPS 2026",
+      "venue_type": "Workshop",
+      "id": "continual-policy-programming"
+    },
+    {
+      "title": "Your Reasoning Benchmark May Not Test Reasoning: Revealing Perception Bottleneck in Abstract Reasoning Benchmarks",
+      "authors": "Xinhe Wang, Jin Huang, Xingjian Zhang, Tianhao Wang, Jiaqi W Ma",
+      "venue": "ACL 2026 Main",
+      "venue_label": "ACL 2026",
+      "paper_url": "https://aclanthology.org/2026.acl-long.826/",
+      "id": "perception-bottlenecks"
+    },
+    {
+      "title": "Jailbreaking Frontier Foundation Models Through Intention Deception",
+      "authors": "Xinhe Wang, Katia Sycara, Yaqi Xie",
+      "venue": "CVPR 2026 Findings",
+      "venue_label": "CVPR 2026",
+      "paper_url": "https://arxiv.org/abs/2604.24082",
+      "id": "intention-deception"
+    },
+    {
+      "title": "Beyond Blind Following: Evaluating Robustness of LLM Agents under Imperfect Guidance",
+      "authors": "Yao Fu, Ran Qiu, Xinhe Wang, Jacob Sansom, Sathvika Ayyappa Prabhu, Huijie Tang, Jaekyeom Kim, Sungryull Sohn, Honglak Lee",
+      "venue": "EACL 2026 Main",
+      "venue_label": "EACL 2026",
+      "paper_url": "https://aclanthology.org/2026.eacl-long.310/",
+      "id": "imperfect-guidance"
+    },
+    {
+      "title": "Interactive and Expressive Code-Augmented Planning with Large Language Models",
+      "authors": "Anthony Z. Liu, Xinhe Wang, Jacob Sansom, Yao Fu, Jongwook Choi, Sungryull Sohn, Jaekyeom Kim, Honglak Lee",
+      "venue": "ACL 2025 Main",
+      "venue_label": "ACL 2025",
+      "paper_url": "https://aclanthology.org/2025.acl-long.994/",
+      "id": "code-augmented-planning"
+    },
+    {
+      "title": "Adversarial Attacks on Data Attribution",
+      "authors": "Xinhe Wang, Pingbang Hu, Junwei Deng, Jiaqi W. Ma",
+      "venue": "ICLR 2025",
+      "venue_label": "ICLR 2025",
+      "paper_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/a510775c4d5970be7af23e01097166b5-Abstract-Conference.html",
+      "id": "data-attribution"
+    }
+  ],
+  "preprints": [
+    {
+      "title": "Cooperative Words, Adversarial Actions: Action-Level Ambiguity in Embodied Multi-Agent Systems",
+      "authors": "Xinhe Wang, Katia Sycara, Yaqi Xie",
+      "id": "cooperative-words"
+    },
+    {
+      "title": "Defending Multi-turn Attacks On Large Language Models Through Active Intention Verification",
+      "authors": "Xinhe Wang, Katia Sycara, Yaqi Xie",
+      "id": "intention-verification"
+    },
+    {
+      "title": "When Not to Make Progress: Test-Time Exploration for LLM Agents",
+      "authors": "Xinhe Wang, Yao Fu, Ran Qiu, Honglak Lee"
+    }
+  ]
+}

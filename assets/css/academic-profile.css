@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("../fonts/geist.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/noto-sans.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Noto Sans", system-ui, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.academic-section h2,
+.preprints-heading {
+  font-family: Manrope, system-ui, sans-serif;
+}
+
+.post-header .post-title {
+  font-family: Manrope, system-ui, sans-serif;
+  font-size: clamp(2.65rem, 6vw, 3.75rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.post-header .post-title .font-weight-bold {
+  font-weight: inherit !important;
+}
+
+.academic-section {
+  margin: 2.75rem 0 0;
+}
+
+.academic-section h2 {
+  margin: 0 0 1.4rem;
+  font-size: clamp(1.65rem, 4vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  scroll-margin-top: 5rem;
+}
+
+.publication-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.publication-list {
+  --venue-column: 10.5rem;
+  --venue-gap: 1.2rem;
+}
+
+.publication-list > li {
+  display: grid;
+  grid-template-columns: var(--venue-column) minmax(0, 1fr);
+  align-items: start;
+  gap: 0.55rem var(--venue-gap);
+  margin-bottom: 2.25rem;
+}
+
+.publication-venue {
+  font-family: Geist, system-ui, sans-serif;
+  justify-self: start;
+  color: var(--global-theme-color);
+  padding-top: 0.18rem;
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+
+.publication-venue-type {
+  color: var(--global-theme-color);
+  display: block;
+}
+
+.publication-authors {
+  font-size: 1.25rem;
+}
+
+.publication-details h3,
+.publication-details h4 {
+  font-family: Manrope, system-ui, sans-serif;
+  font-size: 1.4375rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  line-height: 1.4;
+}
+
+.publication-details p {
+  margin: 0;
+}
+
+.publication-meta {
+  font-family: Geist, system-ui, sans-serif;
+  opacity: 0.84;
+  font-size: 1rem;
+}
+
+.publication-venue-detail {
+  color: var(--global-theme-color);
+  opacity: 1;
+  font-size: 1.125rem;
+}
+
+.preprints-heading {
+  margin: 2rem 0 1rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.preprint-list > li {
+  display: block;
+  margin-left: calc(var(--venue-column) + var(--venue-gap));
+}
+
+@media (max-width: 40rem) {
+  .publication-list > li {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .preprint-list > li {
+    margin-left: 0;
+  }
+}
+
+footer.fixed-bottom {
+  position: static;
+}
+
+.publication-html {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.13rem 0.55rem;
+  border: 1px solid currentColor;
+  border-radius: 0.2rem;
+  font-family: Geist, system-ui, sans-serif;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.publication-html:is(:hover, :focus-visible) {
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.profile-intro {
+  margin-top: 1.5rem;
+  max-width: 78ch;
+}
+
+.profile-intro p {
+  margin-bottom: 0.9rem;
+}
+
+.publication-details :is(h3, h4)[id] {
+  scroll-margin-top: 5rem;
+}

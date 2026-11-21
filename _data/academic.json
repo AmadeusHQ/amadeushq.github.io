@@ -19,7 +19,7 @@
   "publications": [
     {
       "title": "Continual Policy Programming for LLM Agents: Learning Executable Policies from Online Experience",
-      "authors": "Xinhe Wang, Ran Qiu",
+      "authors": "Xinhe Wang*, Ran Qiu*",
       "venue": "NeurIPS 2026 Workshop: Towards Test-Time Continual Learning",
       "venue_label": "NeurIPS 2026",
       "venue_type": "Workshop",
@@ -79,7 +79,7 @@
     },
     {
       "title": "When Not to Make Progress: Test-Time Exploration for LLM Agents",
-      "authors": "Xinhe Wang, Yao Fu, Ran Qiu, Honglak Lee"
+      "authors": "Xinhe Wang*, Yao Fu*, Ran Qiu, Honglak Lee"
     }
   ]
 }

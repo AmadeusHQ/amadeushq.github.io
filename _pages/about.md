@@ -27,7 +27,8 @@ latest_posts:
         </span>
         <div class="publication-details">
           <h3 id="{{ paper.id | escape }}">{{ paper.title | escape }}</h3>
-          <p class="publication-authors">{{ paper.authors | escape | replace: 'Xinhe Wang', '<strong>Xinhe Wang</strong>' }}</p>
+          <p class="publication-authors">{{ paper.authors | escape | replace: 'Xinhe Wang', '<strong>Xinhe Wang</strong>' | replace: '*', '<sup>*</sup>' }}</p>
+          {% if paper.authors contains "*" %}<p class="publication-meta">* Equal contribution</p>{% endif %}
           <p class="publication-meta publication-venue-detail">{{ paper.venue | escape }}</p>
           {% if paper.paper_url %}
             <a class="publication-html" href="{{ paper.paper_url | escape }}" aria-label="HTML: {{ paper.title | escape }}">HTML</a>
@@ -42,7 +43,8 @@ latest_posts:
     {% for paper in site.data.academic.preprints %}
       <li class="publication-details">
         <h4{% if paper.id %} id="{{ paper.id | escape }}"{% endif %}>{{ paper.title | escape }}</h4>
-        <p class="publication-authors">{{ paper.authors | escape | replace: 'Xinhe Wang', '<strong>Xinhe Wang</strong>' }}</p>
+        <p class="publication-authors">{{ paper.authors | escape | replace: 'Xinhe Wang', '<strong>Xinhe Wang</strong>' | replace: '*', '<sup>*</sup>' }}</p>
+        {% if paper.authors contains "*" %}<p class="publication-meta">* Equal contribution</p>{% endif %}
       </li>
     {% endfor %}
   </ul>

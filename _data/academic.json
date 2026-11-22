@@ -45,6 +45,7 @@
       "title": "Beyond Blind Following: Evaluating Robustness of LLM Agents under Imperfect Guidance",
       "authors": "Yao Fu, Ran Qiu, Xinhe Wang, Jacob Sansom, Sathvika Ayyappa Prabhu, Huijie Tang, Jaekyeom Kim, Sungryull Sohn, Honglak Lee",
       "venue": "EACL 2026 Main",
+      "award": "COLM 2025 Workshop AIA Outstanding Paper Award",
       "venue_label": "EACL 2026",
       "paper_url": "https://aclanthology.org/2026.eacl-long.310/",
       "id": "imperfect-guidance"
